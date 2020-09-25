@@ -51,6 +51,7 @@ export interface FeedOptions {
   updated?: Date;
   generator?: string;
   language?: string;
+  flipboard?: boolean;
   ttl?: number;
 
   feed?: string;
