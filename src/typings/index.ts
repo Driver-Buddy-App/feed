@@ -16,6 +16,7 @@ export interface Item {
   enclosure?: Enclosure;
 
   author?: Author[];
+  'dc:creator'?: string;
   contributor?: Author[];
 
   published?: Date;
