@@ -160,7 +160,7 @@ export default (ins: Feed) => {
         if (author.email && author.name) {
           item.author.push({ _text: author.email + " (" + author.name + ")" });
           if (options.flipboard) {
-            item['dc:creator'].push({ _text: author.name });
+            item['dc:creator'] ={ _text: author.name };
           }
         }
       });
