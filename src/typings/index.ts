@@ -16,6 +16,7 @@ export interface Item {
   enclosure?: Enclosure;
 
   author?: Author[];
+  'dc:creator'?: string;
   contributor?: Author[];
 
   published?: Date;
@@ -51,6 +52,7 @@ export interface FeedOptions {
   updated?: Date;
   generator?: string;
   language?: string;
+  flipboard?: boolean;
   ttl?: number;
 
   feed?: string;
